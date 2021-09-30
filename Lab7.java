@@ -31,6 +31,23 @@ ob.r = r*c2.r-im*c2.im;
 ob.im =im*c2.r +r*c2.im;
 return ob;
 }
+Lab7 div(Lab7 c2)
+{
+Lab7 ob=new Lab7();
+if(c2.r== 0 && c2.im== 0 )
+{
+System.out.println("Division by 0 + 0i isn't allowed.");
+}
+else
+{
+int temp1 =r*c2.r + im*c2.im;
+int temp2 = im*c2.r - r*c2.im;
+int temp3 = c2.r*c2.r + c2.im*c2.im;
+ob.r=temp1/temp3;
+ob.im=temp2/temp3;
+}
+return ob;
+} 
 void display()
 {
 System.out.println(r +"+"+ im +"i");
@@ -59,5 +76,8 @@ ob4.display();
 Lab7 ob5=ob1.mul(ob2);
 System.out.println("multiplication of two complex numbers");
 ob5.display();
+Lab7 ob6=ob1.div(ob2);
+System.out.println("division of two complex numbers");
+ob6.display();
 }
 }

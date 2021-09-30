@@ -1,2 +1,1 @@
-# JAVA-Labprograms
-Labprograms
+# JAVA-lab-programs

@@ -1,9 +1,4 @@
-//Lab-16
-//Write a program to implement finals, blank finals, final methods and final class. Write observations.
-
-
 import java.util.*;
-
 final class Box
 {
  final double length=4;
@@ -19,7 +14,6 @@ final class Box
   System.out.println("the area is :"+v);
  }
 }
-
 class Room extends Box
 {
  double height;
@@ -28,14 +22,12 @@ class Room extends Box
   super(l,w);
   height=h;
  }
-
- void vol()
+void vol()
 {
  double v=length*width*height;
- System.out.println("the volume is :"+v);
+ System.out.println(" the volume is :"+v);
 }
 }
-
 class Lab16
 {
  public static void main(String args[])
